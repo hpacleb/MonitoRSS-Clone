@@ -1,2 +1,3 @@
-bot: npm start & node extra.js
+bot: npm start
 web: npm start
+workker: node extra.js
