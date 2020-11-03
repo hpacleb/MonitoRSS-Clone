@@ -67,7 +67,7 @@ bot.on('message', message => {
 
   if (message.author.bot) return;
   else if (message.content.startsWith("/inv")) {
-  if(!(message.member.roles.cache.some(r => r.name === "Moderator")) || message.member.roles.cache.some(r => r.name === "Asst Mod")) return;
+  if(!(message.member.roles.cache.some(r => r.name === "Moderator") || message.member.roles.cache.some(r => r.name === "Asst Mod"))) return;
     replyWithInvite(message);
   }
   else if (message.content.startsWith("/kom")) {
